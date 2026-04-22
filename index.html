@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>J. Sánchez — Entrenador Personal en Gran Canaria</title>
+<meta name="description" content="Entrenador personal titulado en Gran Canaria. Entrenamientos personalizados, presenciales y online. Escríbeme por WhatsApp y empieza esta semana." />
+<meta name="theme-color" content="#0a0a0a" />
+
+<meta property="og:title" content="J. Sánchez — Entrenador Personal en Gran Canaria" />
+<meta property="og:description" content="Entrenamientos personalizados, presenciales y online. Resultados reales, sin rodeos." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_ES" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "J. Sánchez Personal Trainer",
+  "image": "",
+  "telephone": "+34633074847",
+  "email": "javito_arinaga@hotmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "C. el Cincel, 16",
+    "addressLocality": "Agüimes",
+    "addressRegion": "Las Palmas",
+    "postalCode": "35118",
+    "addressCountry": "ES"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 27.8773829, "longitude": -15.4215652 },
+  "url": "",
+  "priceRange": "€€",
+  "openingHours": ["Mo-Fr 07:00-23:00", "Sa 08:00-16:00"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "49" }
+}
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<!-- Page loader -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-text">J. Sánchez</div>
+    <div class="loader-bar"><span></span></div>
+    <div class="loader-pct" id="loaderPct">0</div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Noise overlay -->
+<div class="noise" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand" data-magnetic>
+      <span class="nav-brand-dot"></span>
+      <span class="nav-brand-text">J. Sánchez</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi" data-hover>Sobre mí</a></li>
+      <li><a href="#servicios" data-hover>Servicios</a></li>
+      <li><a href="#metodo" data-hover>Método</a></li>
+      <li><a href="#resenas" data-hover>Reseñas</a></li>
+      <li><a href="#contacto" data-hover>Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/34633074847?text=Hola%20Javi%2C%20quiero%20informaci%C3%B3n%20sobre%20entrenamientos" class="nav-cta" target="_blank" rel="noopener" data-magnetic>
+      <span>Empezar</span>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+  <div class="hero-bg-blob hero-bg-blob-1" aria-hidden="true"></div>
+  <div class="hero-bg-blob hero-bg-blob-2" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow" data-anim="fade-up">
+          <span class="hero-eyebrow-dot"></span>
+          <span>Entrenador personal · Gran Canaria</span>
+        </div>
+
+        <h1 class="hero-title" data-scramble>
+          <span class="line"><span class="line-inner" data-stagger>Entrena</span></span>
+          <span class="line"><span class="line-inner outline" data-stagger>en serio.</span></span>
+          <span class="hero-small" data-anim="fade-up" data-delay="400">
+            Presencial en Arinaga y online, con un plan hecho solo para ti y un entrenador detrás en cada sesión.
+          </span>
+        </h1>
+
+        <div class="hero-ctas" data-anim="fade-up" data-delay="500">
+          <a href="https://wa.me/34633074847?text=Hola%20Javi%2C%20quiero%20informaci%C3%B3n%20sobre%20entrenamientos" class="btn btn-primary" target="_blank" rel="noopener" data-magnetic>
+            <span class="btn-text">Escribir por WhatsApp</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#servicios" class="btn btn-ghost" data-magnetic>
+            <span class="btn-text">Ver servicios</span>
+          </a>
+        </div>
+
+        <div class="hero-stats" data-anim="fade-up" data-delay="600">
+          <div class="stat">
+            <div class="stat-num" data-counter="5.0" data-suffix="★">0</div>
+            <div class="stat-label">49 reseñas Google</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-counter="100" data-suffix="%">0</div>
+            <div class="stat-label">Planes personalizados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">TAFAD</div>
+            <div class="stat-label">Técnico titulado</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-tilt>
+        <div class="hero-visual-inner">
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/javi-retrato.jpg">
+            <source src="images/javi-video.mp4" type="video/mp4">
+          </video>
+          <img class="hero-fallback-img" src="images/javi-retrato.jpg" alt="Javier Sánchez, entrenador personal" />
+          <div class="hero-visual-placeholder">
+            <svg viewBox="0 0 100 100" width="80" height="80" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="50" cy="35" r="15"/>
+              <path d="M20 85 Q50 60 80 85"/>
+            </svg>
+          </div>
+          <div class="visual-frame top-right"></div>
+          <div class="visual-frame bottom-left"></div>
+          <div class="hero-tag">
+            <div>
+              <div class="hero-tag-name">J. Sánchez</div>
+              <div class="hero-tag-role">Personal Trainer</div>
+            </div>
+            <div class="hero-tag-badge">Arinaga</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Fuerza</span>
+    <span class="marquee-item">Hipertrofia</span>
+    <span class="marquee-item">Pérdida de grasa</span>
+    <span class="marquee-item">Recomposición</span>
+    <span class="marquee-item">Resistencia</span>
+    <span class="marquee-item">Movilidad</span>
+    <span class="marquee-item">Rehabilitación</span>
+    <span class="marquee-item">Fuerza</span>
+    <span class="marquee-item">Hipertrofia</span>
+    <span class="marquee-item">Pérdida de grasa</span>
+    <span class="marquee-item">Recomposición</span>
+    <span class="marquee-item">Resistencia</span>
+    <span class="marquee-item">Movilidad</span>
+    <span class="marquee-item">Rehabilitación</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="sobre-mi">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-label" data-anim="fade-up">
+        <div class="num" data-parallax="0.3">01</div>
+        <div class="eyebrow">Sobre mí</div>
+        <h2 class="split-title"><span>Javi</span><br><span>Sánchez</span></h2>
+      </div>
+      <div class="about-body">
+        <p data-anim="fade-up">Soy Javi, entrenador personal en Gran Canaria. Llevo años ayudando a personas a coger el gimnasio en serio, <strong>adaptando cada sesión a su nivel, su cuerpo y sus objetivos.</strong></p>
+        <p data-anim="fade-up" data-delay="100">No trabajo con rutinas copiadas ni con planes genéricos. Cada cliente tiene el suyo, y yo estoy detrás en cada sesión para corregir, ajustar y empujar cuando hace falta.</p>
+        <p data-anim="fade-up" data-delay="200">Entreno a quien empieza desde cero, a quien lleva años estancado y a quien vuelve después de una lesión. El objetivo es siempre el mismo: <strong>que progreses de verdad y disfrutes haciéndolo.</strong></p>
+
+        <div class="about-credentials">
+          <div class="credential" data-anim="fade-up" data-delay="100">
+            <div class="credential-label">Titulación</div>
+            <div class="credential-value">Técnico Superior TAFAD</div>
+          </div>
+          <div class="credential" data-anim="fade-up" data-delay="200">
+            <div class="credential-label">Base</div>
+            <div class="credential-value">Arinaga · Agüimes</div>
+          </div>
+          <div class="credential" data-anim="fade-up" data-delay="300">
+            <div class="credential-label">Modalidad</div>
+            <div class="credential-value">Presencial & Online</div>
+          </div>
+          <div class="credential" data-anim="fade-up" data-delay="400">
+            <div class="credential-label">Enfoque</div>
+            <div class="credential-value">Plan 100% personal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-anim="fade-up">— 02 Servicios</span>
+        <h2 data-anim="fade-up" data-delay="100">Dos formas <span class="outline">de entrenar</span> conmigo.</h2>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-anim="fade-up" data-tilt-soft>
+        <div class="service-num">01 / Presencial</div>
+        <h3 class="service-title">Entrenamiento<br>personal</h3>
+        <p class="service-desc">Tú y yo, en el gimnasio. Sesiones individuales con un plan diseñado para ti y seguimiento real de cada ejercicio.</p>
+        <ul class="service-features">
+          <li>De 8 a 16 sesiones al mes, tú eliges</li>
+          <li>Horario flexible, distribución a tu ritmo</li>
+          <li>Corrección de técnica sesión a sesión</li>
+          <li>Plan adaptado a tu objetivo real</li>
+        </ul>
+        <a href="https://wa.me/34633074847?text=Hola%20Javi%2C%20quiero%20info%20del%20entrenamiento%20personal%20presencial" class="service-link" target="_blank" rel="noopener" data-hover>
+          <span>Consultar por WhatsApp</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card" data-anim="fade-up" data-delay="150" data-tilt-soft>
+        <div class="service-num">02 / Online</div>
+        <h3 class="service-title">Entrenamiento<br>online</h3>
+        <p class="service-desc">Tu plan, donde estés. Para quien no puede entrenar presencial pero quiere un programa serio, con seguimiento y ajustes.</p>
+        <ul class="service-features">
+          <li>Rutina diseñada desde cero para ti</li>
+          <li>Revisión de técnica por vídeo</li>
+          <li>Ajustes periódicos según tu progreso</li>
+          <li>Contacto directo conmigo cuando lo necesites</li>
+        </ul>
+        <a href="https://wa.me/34633074847?text=Hola%20Javi%2C%20quiero%20info%20del%20entrenamiento%20online" class="service-link" target="_blank" rel="noopener" data-hover>
+          <span>Consultar por WhatsApp</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="method" id="metodo">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-anim="fade-up">— 03 Método</span>
+        <h2 data-anim="fade-up" data-delay="100">Sin trucos ni rutinas <span class="outline">de Instagram.</span></h2>
+      </div>
+    </div>
+
+    <div class="method-visual" data-anim="fade-up">
+      <img src="images/javi-entrenando.jpg" alt="Javi supervisando una sesión de entrenamiento" onerror="this.style.display='none'; this.parentNode.classList.add('no-img')" />
+      <div class="method-overlay"></div>
+      <div class="method-quote">
+        Progreso real, <span class="accent">sesión a sesión.</span>
+      </div>
+    </div>
+
+    <div class="method-steps">
+      <div class="method-step" data-anim="fade-up">
+        <div class="method-step-num">— Paso 01</div>
+        <div class="method-step-title">Valoración</div>
+        <div class="method-step-desc">Hablamos de tu objetivo, tu historial y tu disponibilidad. Sin compromiso.</div>
+      </div>
+      <div class="method-step" data-anim="fade-up" data-delay="100">
+        <div class="method-step-num">— Paso 02</div>
+        <div class="method-step-title">Plan</div>
+        <div class="method-step-desc">Diseño tu entrenamiento desde cero, pensado para tu cuerpo y tu ritmo.</div>
+      </div>
+      <div class="method-step" data-anim="fade-up" data-delay="200">
+        <div class="method-step-num">— Paso 03</div>
+        <div class="method-step-title">Entreno</div>
+        <div class="method-step-desc">Sesiones presenciales u online, con técnica cuidada y carga progresiva.</div>
+      </div>
+      <div class="method-step" data-anim="fade-up" data-delay="300">
+        <div class="method-step-num">— Paso 04</div>
+        <div class="method-step-title">Progreso</div>
+        <div class="method-step-desc">Revisamos, ajustamos y seguimos subiendo. Los resultados llegan solos.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="ventajas">
+  <div class="benefits-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="benefits-head">
+      <span class="eyebrow" data-anim="fade-up">— 04 Ventajas de entrenar con un entrenador personal en Gran Canaria</span>
+      <h2 data-anim="fade-up" data-delay="100">Consigue mejoras <span class="outline">físicas y mentales.</span></h2>
+      <p data-anim="fade-up" data-delay="200">Detrás de cada entrenamiento hay un plan serio y un entrenador a tu lado. Te acompaño en cada paso con la motivación, el conocimiento y la seguridad para llegar a tu objetivo.</p>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card" data-anim="fade-up">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="14" width="44" height="40" rx="4"/>
+            <circle cx="32" cy="32" r="10"/>
+            <path d="M32 27v5l3 2"/>
+            <path d="M22 20h4M38 20h4"/>
+          </svg>
+        </div>
+        <h3>Resultados más rápidos y seguros</h3>
+        <p>Reducirás grasa y ganarás masa magra de forma eficiente, sin comprometer tu salud ni tus articulaciones.</p>
+      </div>
+
+      <div class="benefit-card" data-anim="fade-up" data-delay="100">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M32 8v8"/>
+            <circle cx="32" cy="22" r="6"/>
+            <path d="M20 40c0-6 4-10 12-10s12 4 12 10"/>
+            <path d="M24 40l-4 16M40 40l4 16"/>
+            <path d="M18 32l-6 3M46 32l6 3"/>
+          </svg>
+        </div>
+        <h3>Aumento del metabolismo</h3>
+        <p>Combino fuerza y cardio de forma inteligente para acelerar tu gasto calórico incluso en reposo.</p>
+      </div>
+
+      <div class="benefit-card" data-anim="fade-up" data-delay="200">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M32 52s-18-10-18-24a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 14-18 24-18 24Z"/>
+            <path d="M14 32h10l3-8 4 16 4-10 3 2h12"/>
+          </svg>
+        </div>
+        <h3>Más energía y mejor ánimo</h3>
+        <p>El ejercicio libera endorfinas. Notarás más claridad, menos estrés y más ganas día a día.</p>
+      </div>
+
+      <div class="benefit-card" data-anim="fade-up" data-delay="300">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="8" y="26" width="6" height="12" rx="2"/>
+            <rect x="50" y="26" width="6" height="12" rx="2"/>
+            <rect x="14" y="22" width="4" height="20" rx="1.5"/>
+            <rect x="46" y="22" width="4" height="20" rx="1.5"/>
+            <path d="M18 32h28"/>
+          </svg>
+        </div>
+        <h3>Más fuerza y resistencia</h3>
+        <p>Ganarás capacidad física para rendir mejor en el gym y en tu vida diaria, con progresión real.</p>
+      </div>
+    </div>
+
+    <div class="benefits-cta" data-anim="fade-up" data-delay="200">
+      <a href="https://wa.me/34633074847?text=Hola%20Javi%2C%20quiero%20empezar%20a%20entrenar" class="btn btn-primary" target="_blank" rel="noopener" data-magnetic>
+        <span class="btn-text">Entrena con un plan que sí funciona</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY (horizontal scroll) -->
+<section class="gallery" id="galeria">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-anim="fade-up">— 05 En acción</span>
+        <h2 data-anim="fade-up" data-delay="100">Sesiones <span class="outline">reales.</span></h2>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-track-wrap">
+    <div class="gallery-track" id="galleryTrack">
+      <figure class="gallery-item" data-reveal-img>
+        <img src="images/javi-01.jpg" alt="Sesión 01" loading="lazy">
+        <figcaption><span>01</span> Fuerza</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal-img>
+        <img src="images/javi-02.jpg" alt="Sesión 02" loading="lazy">
+        <figcaption><span>02</span> Técnica</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal-img>
+        <img src="images/javi-03.jpg" alt="Sesión 03" loading="lazy">
+        <figcaption><span>03</span> Hipertrofia</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal-img>
+        <img src="images/javi-05.jpg" alt="Sesión 04" loading="lazy">
+        <figcaption><span>04</span> Movilidad</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal-img>
+        <img src="images/javi-07.jpg" alt="Sesión 05" loading="lazy">
+        <figcaption><span>05</span> Arinaga</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal-img>
+        <img src="images/javi-08.jpg" alt="Sesión 06" loading="lazy">
+        <figcaption><span>06</span> Progreso</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="resenas">
+  <div class="container">
+    <div class="reviews-head">
+      <div>
+        <span class="eyebrow" data-anim="fade-up">— 06 Reseñas</span>
+        <h2 data-anim="fade-up" data-delay="100" style="font-size: clamp(2rem, 4vw, 3rem); max-width: 32rem;">Lo que dicen los que <span class="outline">ya entrenan</span> conmigo.</h2>
+      </div>
+      <div class="reviews-rating" data-anim="fade-up" data-delay="200">
+        <div class="reviews-rating-num">5.0</div>
+        <div class="reviews-rating-info">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <div class="reviews-rating-label">49 reseñas · Google</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card" data-anim="fade-up">
+        <div class="review-header">
+          <div class="review-author">Cliente verificado</div>
+          <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+        </div>
+        <p class="review-text">Era el típico que le daba miedo ir al gimnasio por la falta de experiencia. Javi se adaptó a mi nivel y mis circunstancias, tiene amplia disponibilidad y motivación constante. Rompe la monotonía de las rutinas.</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Reseña de Google
+        </div>
+      </div>
+
+      <div class="review-card" data-anim="fade-up" data-delay="100">
+        <div class="review-header">
+          <div class="review-author">Cliente verificado</div>
+          <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+        </div>
+        <p class="review-text">Excelente entrenador, muy profesional y dedicado. Después de solo un mes entrenando con él, los resultados son bastante notables. Siempre atento a los detalles y enfocado en la mejora continua.</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Reseña de Google
+        </div>
+      </div>
+
+      <div class="review-card" data-anim="fade-up" data-delay="200">
+        <div class="review-header">
+          <div class="review-author">Cliente verificado</div>
+          <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+        </div>
+        <p class="review-text">Llevo 20 años entrenando por mi cuenta, y desde que probé el método de Javi, la evolución y el progreso han sido increíbles. Trato cercano y entrenamiento personalizado a cada físico, eso marca la diferencia.</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Reseña de Google
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-cta" data-anim="fade-up">
+      <a href="https://search.google.com/local/reviews?placeid=ChIJp9Pod-ufQAwR7uDtrwwIKSU" target="_blank" rel="noopener" data-hover>
+        Ver las 49 reseñas en Google →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-anim="fade-up">— 07 Contacto</span>
+        <h2 data-anim="fade-up" data-delay="100">Hablemos <span class="outline">directamente.</span></h2>
+      </div>
+    </div>
+
+    <div class="contacto-grid">
+      <a href="https://wa.me/34633074847?text=Hola%20Javi%2C%20quiero%20informaci%C3%B3n" class="contacto-card" target="_blank" rel="noopener" data-anim="fade-up" data-magnetic>
+        <div class="contacto-icon" style="color:#25D366">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+        </div>
+        <div class="contacto-label">WhatsApp</div>
+        <div class="contacto-value">Responde en minutos</div>
+        <div class="contacto-arrow">→</div>
+      </a>
+
+      <a href="tel:+34633074847" class="contacto-card" data-anim="fade-up" data-delay="100" data-magnetic>
+        <div class="contacto-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="contacto-label">Teléfono</div>
+        <div class="contacto-value">633 07 48 47</div>
+        <div class="contacto-arrow">→</div>
+      </a>
+
+      <a href="mailto:javito_arinaga@hotmail.com" class="contacto-card" data-anim="fade-up" data-delay="200" data-magnetic>
+        <div class="contacto-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contacto-label">Email</div>
+        <div class="contacto-value">javito_arinaga@hotmail.com</div>
+        <div class="contacto-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="cta-final-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-final-inner">
+      <h2>
+        <span class="line"><span class="line-inner" data-stagger>¿Entrenamos?</span></span>
+        <span class="line"><span class="line-inner outline" data-stagger>Sin excusas.</span></span>
+      </h2>
+      <p data-anim="fade-up" data-delay="200">Una primera charla por WhatsApp, sin compromiso, para ver qué necesitas y cómo te puedo ayudar.</p>
+      <a href="https://wa.me/34633074847?text=Hola%20Javi%2C%20quiero%20empezar%20a%20entrenar" class="cta-final-btn" target="_blank" rel="noopener" data-magnetic data-anim="fade-up" data-delay="300">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span>Escribir a Javi por WhatsApp</span>
+      </a>
+      <div class="cta-channels" data-anim="fade-up" data-delay="400">
+        <a href="tel:+34633074847" data-hover>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          633 07 48 47
+        </a>
+        <a href="mailto:javito_arinaga@hotmail.com" data-hover>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          javito_arinaga@hotmail.com
+        </a>
+        <a href="https://instagram.com/j.sanchez.pt" target="_blank" rel="noopener" data-hover>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          @j.sanchez.pt
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-huge" aria-hidden="true">J. SÁNCHEZ</div>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">J. Sánchez</div>
+        <p class="footer-tag">Entrenador personal titulado en Gran Canaria. Planes reales para personas reales.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#sobre-mi" data-hover>Sobre mí</a></li>
+          <li><a href="#servicios" data-hover>Servicios</a></li>
+          <li><a href="#metodo" data-hover>Método</a></li>
+          <li><a href="#resenas" data-hover>Reseñas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/34633074847" target="_blank" rel="noopener" data-hover>WhatsApp</a></li>
+          <li><a href="tel:+34633074847" data-hover>633 07 48 47</a></li>
+          <li><a href="mailto:javito_arinaga@hotmail.com" data-hover>Email</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="https://instagram.com/j.sanchez.pt" target="_blank" rel="noopener" data-hover>Instagram</a></li>
+          <li><a href="https://search.google.com/local/reviews?placeid=ChIJp9Pod-ufQAwR7uDtrwwIKSU" target="_blank" rel="noopener" data-hover>Google</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <a href="aviso-legal.html" data-hover>Aviso legal</a>
+      <span>·</span>
+      <a href="privacidad.html" data-hover>Privacidad</a>
+      <span>·</span>
+      <a href="cookies.html" data-hover>Cookies</a>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 J. Sánchez Personal Trainer · Gran Canaria</div>
+      <div class="made-by">Web por Canarias Lead</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/34633074847?text=Hola%20Javi%2C%20quiero%20informaci%C3%B3n" class="float-wa" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-magnetic>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
