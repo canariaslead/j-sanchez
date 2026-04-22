@@ -735,8 +735,7 @@ section { position: relative; }
 }
 
 .about-label {
-  position: sticky;
-  top: 7rem;
+  position: relative;
 }
 .about-label .num {
   font-family: var(--font-display);
@@ -754,11 +753,11 @@ section { position: relative; }
 .about-photo {
   position: relative;
   margin-top: 2rem;
-  aspect-ratio: 4/5;
+  aspect-ratio: 1/1;
   border-radius: 8px;
   overflow: hidden;
   background: var(--black-2);
-  max-width: 360px;
+  width: 100%;
 }
 .about-photo img {
   width: 100%;
@@ -793,7 +792,7 @@ section { position: relative; }
 }
 
 @media (max-width: 900px) {
-  .about-photo { max-width: 280px; margin-top: 1.5rem; }
+  .about-photo { max-width: 320px; margin-top: 1.5rem; }
 }
 
 .about-body p {
