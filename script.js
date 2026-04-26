@@ -217,19 +217,47 @@ function runCounter(el) {
 (function () {
   const track = document.getElementById('galleryTrack');
   if (!track) return;
-  const section = track.closest('.gallery');
+  const wrap = track.parentElement;
 
-  // Horizontal scroll driven by vertical scroll
-  function onScroll() {
-    const r = section.getBoundingClientRect();
-    const vh = window.innerHeight;
-    const total = r.height + vh;
-    const p = Math.max(0, Math.min(1, (vh - r.top) / total));
-    const max = track.scrollWidth - window.innerWidth;
-    if (max > 0) track.style.transform = `translateX(${-p * max * 0.7}px)`;
+  // Pointer drag to scroll
+  let isDown = false, startX = 0, startScroll = 0, moved = 0;
+
+  wrap.addEventListener('pointerdown', (e) => {
+    isDown = true;
+    moved = 0;
+    startX = e.clientX;
+    startScroll = wrap.scrollLeft;
+    wrap.classList.add('is-dragging');
+    try { wrap.setPointerCapture(e.pointerId); } catch (_) {}
+  });
+
+  wrap.addEventListener('pointermove', (e) => {
+    if (!isDown) return;
+    const dx = e.clientX - startX;
+    moved = Math.abs(dx);
+    wrap.scrollLeft = startScroll - dx;
+  });
+
+  function endDrag(e) {
+    if (!isDown) return;
+    isDown = false;
+    wrap.classList.remove('is-dragging');
+    try { wrap.releasePointerCapture(e.pointerId); } catch (_) {}
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  wrap.addEventListener('pointerup', endDrag);
+  wrap.addEventListener('pointercancel', endDrag);
+  wrap.addEventListener('pointerleave', endDrag);
+
+  // Block click after drag
+  wrap.addEventListener('click', (e) => { if (moved > 5) { e.preventDefault(); e.stopPropagation(); } }, true);
+
+  // Wheel: vertical → horizontal
+  wrap.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      wrap.scrollLeft += e.deltaY;
+      e.preventDefault();
+    }
+  }, { passive: false });
 
   // Reveal items stagger
   const io = new IntersectionObserver((entries) => {
