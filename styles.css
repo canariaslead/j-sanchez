@@ -2016,6 +2016,9 @@ section { position: relative; }
   clip-path: inset(100% 0 0 0);
   animation: clipReveal 1.2s var(--ease-out) forwards;
   animation-play-state: paused;
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
 }
 .gallery-item.in-view img { animation-play-state: running; }
 @keyframes clipReveal {

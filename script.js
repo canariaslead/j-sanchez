@@ -222,6 +222,11 @@ function runCounter(el) {
   // Pointer drag to scroll
   let isDown = false, startX = 0, startScroll = 0, moved = 0;
 
+  // Block native img drag
+  track.querySelectorAll('img').forEach(img => img.setAttribute('draggable', 'false'));
+
+  wrap.addEventListener('dragstart', (e) => e.preventDefault());
+
   wrap.addEventListener('pointerdown', (e) => {
     isDown = true;
     moved = 0;
